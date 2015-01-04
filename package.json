@@ -1,10 +1,14 @@
 {
   "name": "scroll_detective",
   "version": "0.1.0",
-  "description": "small module that hides/shows elements when scrolling down/up/stops",
+  "description": "A minimal JavaScript module for manipulating DOM Elements when scrolling in certain directions or after scrolling stops.",
   "main": "lib/scroll_detective.js",
   "scripts": {
     "test": "open tests/test.html && open tests/test_advanced.html"
+  },
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/DieTapete/scroll_detective.git"
   },
   "keywords": [
     "scroll",
