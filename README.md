@@ -51,8 +51,8 @@ A minimal JavaScript module for manipulating DOM Elements when scrolling in cert
 
 ## Todo:
   - Add Options to documentation
-  - Fix hide_on_scroll_stop
   - Enable hiding without css classes
+  - Enable timeout for scroll_stop again after disabling.
 
 ## Release History
 
