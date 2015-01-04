@@ -1,0 +1,21 @@
+{
+  "name": "scroll_detective",
+  "version": "0.1.0",
+  "description": "small module that hides/shows elements when scrolling down/up/stops",
+  "main": "lib/scroll_detective.js",
+  "scripts": {
+    "test": "open tests/test.html && open tests/test_advanced.html"
+  },
+  "keywords": [
+    "scroll",
+    "frontend"
+  ],
+  "author": "Henner Woehler",
+  "license": {
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/MIT"
+  },
+  "devDependencies": {
+    "open": "0.0.5"
+  }
+}

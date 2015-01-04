@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="http://bootswatch.com/cosmo/bootstrap.min.css">
+
+<style type="text/css">
+*{
+	font-family:'Helvetica Neue', sans-serif;
+	margin:0;
+	padding:0;
+}
+.container{
+	height:4000px;
+	width:800px;
+	overflow: hidden;
+}
+
+#extra{
+	width:100px;
+	height:50px;
+	position: fixed;
+	top:0;
+	opacity: 1;
+
+	background-color: black;
+}
+
+.hide_on_scroll_down{
+	width:100%;
+	height:50px;
+	position: fixed;
+	top:0;
+	opacity: 1;
+
+	padding-top:20px;
+	padding-left:10px;
+	
+	background-color: gray;
+	color:white;
+
+	transition: all 0.4s;
+}
+
+.hide_on_scroll_down.hidden{
+	top:-100px;
+}
+
+.hide_on_scroll_up{
+	width:100px;
+	height:100px;
+	background-color: red;
+	position: fixed;
+	bottom:0px;
+
+	transition: opacity 0.4s;
+	opacity: 1;
+}
+
+.hidden{
+	opacity: 0 !important;
+}
+
+</style>
+<title>ScrollDetective Test</title>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="../lib/scroll_detective.js"></script>
+<script>
+	$(function(){
+		var scroll_detective = ScrollDetective($);
+	});
+</script>
+</head>
+<body>
+	<div class="container">
+		<div class="hide_on_scroll_down">This will be hidden when you scroll down.</div>
+		<div  class="hide_on_scroll_up">This will be hidden when you scroll up.</div>
+
+		<div id="extra" class="hide_on_scroll_down hide_on_scroll_stop hidden">Hey, you just scrolled up!</div>
+	</div
+</body>
+</html>
