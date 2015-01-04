@@ -1,7 +1,7 @@
 Scroll Detective
 =========
 
-A minimal JavaScript module for manipulating DOM Elements when scrolling in certain directions or after scrolling stops.
+A minimal JavaScript module for manipulating DOM Elements when scrolling up, down or after scrolling stops.
 
 ## Installation
 	
