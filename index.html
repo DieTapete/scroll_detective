@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>ScrollDetective by DieTapete</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/DieTapete/scroll_detective">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>ScrollDetective</h1>
+            <h2>A minimal JavaScript module for manipulating DOM Elements when scrolling in certain directions or after scrolling stops.</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/DieTapete/scroll_detective/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/DieTapete/scroll_detective/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a id="scroll-detective" class="anchor" href="#scroll-detective" aria-hidden="true"><span class="octicon octicon-link"></span></a>Scroll Detective</h1>
+
+<p>A minimal JavaScript module for manipulating DOM Elements when scrolling in certain directions or after scrolling stops.</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<pre><code>npm install scroll_detective --save
+</code></pre>
+
+<p>Furthermore jQuery or a similar library is required that supports the methods <code>on()</code>, <code>off()</code>, <code>trigger()</code> and querying selectors like jQuery.</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>HTML:</p>
+
+<pre><code>&lt;div class="hide_on_scroll_down"&gt;Hidden when you scroll down.&lt;/div&gt;
+&lt;div class="hide_on_scroll_up"&gt;Hidden when you scroll up.&lt;/div&gt;
+</code></pre>
+
+<p>CSS:</p>
+
+<pre><code>.hide_on_scroll_up, .hide_on_scroll_down{
+    opacity:1;
+}
+
+.hidden{
+    opacity:0;
+}
+
+.hide_on_scroll_down.hidden{
+    top:-50px;
+}
+</code></pre>
+
+<p>JS:</p>
+
+<pre><code>var scroll_detective = ScrollDetective($);
+</code></pre>
+
+<h2>
+<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation</h2>
+
+<h3>
+<a id="supported-css-classes" class="anchor" href="#supported-css-classes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Supported CSS classes:</h3>
+
+<ul>
+<li>
+<code>hide_on_scroll_down</code> : The CSS class <code>hidden</code> will be added as soon as the user scrolls down.</li>
+<li>
+<code>hide_on_scroll_up</code> : The CSS class <code>hidden</code> will be added as soon as the user scrolls up.</li>
+<li>
+<code>hide_on_scroll_stop</code> : The CSS class <code>hidden</code> will be added after the user stops scrolling.</li>
+</ul>
+
+<h3>
+<a id="events" class="anchor" href="#events" aria-hidden="true"><span class="octicon octicon-link"></span></a>Events:</h3>
+
+<ul>
+<li>
+<code>scroll_hide</code> : Triggered by each element when it's being hidden.</li>
+<li>
+<code>scroll_show</code> : Triggered by each element when it's being shown.</li>
+</ul>
+
+<h3>
+<a id="methods" class="anchor" href="#methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Methods:</h3>
+
+<ul>
+<li>
+<code>setEnabled(boolean)</code> : Set the enabled state.</li>
+<li>
+<code>enable()</code> : Convenience method for <code>setEnabled(true)</code>.</li>
+<li>
+<code>disable()</code> : Convenience method for <code>setEnabled(false)</code>.</li>
+</ul>
+
+<h2>
+<a id="todo" class="anchor" href="#todo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Todo:</h2>
+
+<ul>
+<li>Add Options to documentation</li>
+<li>Enable hiding without css classes</li>
+<li>Enable timeout for scroll_stop again after disabling.</li>
+</ul>
+
+<h2>
+<a id="release-history" class="anchor" href="#release-history" aria-hidden="true"><span class="octicon octicon-link"></span></a>Release History</h2>
+
+<ul>
+<li>0.1.0 Initial release</li>
+</ul>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/DieTapete">DieTapete</a> can be found on <a href="https://github.com/DieTapete/scroll_detective">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
