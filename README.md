@@ -34,16 +34,16 @@ A minimal JavaScript module for manipulating DOM Elements when scrolling up, dow
   	var scroll_detective = ScrollDetective($);
 
 ## Documentation
-###Supported CSS classes: 
+### Supported CSS classes: 
   - `hide_on_scroll_down` : The CSS class `hidden` will be added as soon as the user scrolls down.
   - `hide_on_scroll_up` : The CSS class `hidden` will be added as soon as the user scrolls up.
   - `hide_on_scroll_stop` : The CSS class `hidden` will be added after the user stops scrolling.
 
-###Events: 
+### Events: 
   - `scroll_hide` : Triggered by each element when it's being hidden.
   - `scroll_show` : Triggered by each element when it's being shown.
 
-###Methods: 
+### Methods: 
   - `setEnabled(boolean)` : Set the enabled state.
   - `enable()` : Convenience method for `setEnabled(true)`.
   - `disable()` : Convenience method for `setEnabled(false)`.
